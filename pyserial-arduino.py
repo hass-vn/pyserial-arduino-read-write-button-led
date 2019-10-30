@@ -1,5 +1,5 @@
 import serial
-ser = serial.Serial('/dev/ttyUSB1', baudrate=9600)
+ser = serial.Serial('/dev/ttyUSB1', baudrate=9600)#change your port win 'com' linux '/dev/tty...'
 while True:
     state = int(ser.readline().decode())
     if state == 1:
